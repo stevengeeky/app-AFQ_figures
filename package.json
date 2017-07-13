@@ -1,7 +1,7 @@
 {
-  "name": "app-LIFE_AFQ_qualitycheck",
+  "name": "app-AFQ_figures",
   "version": "1.0.0",
-  "description": "check quality of life and AFQ output",
+  "description": "create figures of AFQ output",
   
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/brain-life/app-LIFE_AFQ_qualitycheck"
+    "url": "https://github.com/kitchell/app-AFQ_figures"
   },
   "author": "Lindsey Kitchell <kitchell@indiana.edu>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/brain-life/app-LIFE_AFQ_qualitycheck/issues"
+    "url": "https://github.com/kitchell/app-AFQ_figures/issues"
   },
-  "homepage": "https://github.com/brain-life/app-LIFE_AFQ_qualitycheck#readme"
+  "homepage": "https://github.com/kitchell/app-AFQ_figures#readme"
 }
