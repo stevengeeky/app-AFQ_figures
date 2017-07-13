@@ -24,9 +24,9 @@ view = config.view;
 set(0, 'DefaultFigureVisible', 'off')
 
 nifti = readFileNifti(config.t1);
-mkdir('figures')
+mkdir('images')
 for i = 1:length(fg_classified)
-    figname = strcat('figures/', fg_classified(i).name, '.png');
+    figname = strcat('images/', fg_classified(i).name, '.png');
     figname = strrep(figname, ' ', '_');
     AFQ_RenderFibers(fg_classified(i), 'camera', view, 'color', [0 1 1])
     switch view
