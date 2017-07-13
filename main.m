@@ -8,7 +8,7 @@ case 'IUHPC'
     addpath(genpath('/N/u/hayashis/BigRed2/git/mba'))
 case 'VM'
 	disp('loading paths (VM)')
-	addpath(genpath('/N/u/hayashis/BigRed2/git/jsonlab'))
+	addpath(genpath('/usr/local/jsonlab'))
     addpath(genpath('/usr/local/afq-master'))
     addpath(genpath('/usr/local/mba'))
 end
