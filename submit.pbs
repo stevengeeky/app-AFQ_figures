@@ -9,8 +9,8 @@ if [ $ENV == "IUHPC" ]; then
 fi
 
 export MATLABPATH=$MATLABPATH:$SERVICE_DIR
-matlab -nodisplay -nosplash -r main
-
+#matlab -nodisplay -nosplash -r main
+matlab -nodesktop -nosplash -r main
 count=$(ls images/*.png | wc -l)
 if [ $count -eq 20 ];
 then 
