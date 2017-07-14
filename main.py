@@ -24,7 +24,7 @@ os.mkdir(pwd + "/images")
 ##os.chdir(pwd + "/surfaces")
 #
 #print('looking for ' + config["AFQ"] + "/tracts/*.json")
-
+print config["AFQ"]
 for file in glob.glob(config["AFQ"] + "/tracts/*.json"):
 #for file in glob.glob("tracts/*.json"):
     with open(file) as data_file:    
