@@ -25,7 +25,7 @@ os.mkdir(pwd + "/images")
 #
 #print('looking for ' + config["AFQ"] + "/tracts/*.json")
 print config["AFQ"]
-for file in glob.glob(config["AFQ"] + "/tracts/*.json"):
+for file in glob.glob(config["AFQ"] + "/*.json"):
 #for file in glob.glob("tracts/*.json"):
     with open(file) as data_file:    
         tract = json.load(data_file)
