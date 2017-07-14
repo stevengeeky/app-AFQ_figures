@@ -1,0 +1,14 @@
+#!/bin/bash
+#PBS -l nodes=3:ppn=16:dc2,walltime=0:05:00
+#PBS -N app-dipy-test
+#PBS -V
+
+[ $PBS_O_WORKDIR ] && cd $PBS_O_WORKDIR
+
+module unload python
+module load anaconda2
+
+export PYTHONPATH=/N/u/brlife/Karst/git/dipy:$PYTHONPATH
+export PYTHONPATH=/N/u/kitchell/Karst/github_repos/nibabel:$PYTHONPATH
+
+python testafq.py

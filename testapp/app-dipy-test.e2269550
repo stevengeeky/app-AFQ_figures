@@ -1,0 +1,4 @@
+Python programming language version 2.7.3 unloaded.
+Please unload any existing python modules first. (module unload python)
+anaconda2 version 4.2.0 loaded.
+python: can't open file 'testafq.py': [Errno 2] No such file or directory
