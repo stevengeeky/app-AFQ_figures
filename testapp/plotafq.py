@@ -13,6 +13,9 @@ import json
 import numpy as np
 from dipy.viz import window, actor
 
+
+
+
 #with open('config.json') as config_json:
 #    config = json.load(config_json)
 #
@@ -38,19 +41,24 @@ for file in glob.glob("tracts/*.json"):
 #    renderer.clear()
 #    renderer.projection('parallel')
     stream_actor = actor.streamtube(bundle, colors=tract['color'],linewidth=1)
-    
-    renderer.set_camera(position=(-176.42, 118.52, 128.20),
-                        focal_point=(113.30, 128.31, 76.56),
-                        view_up=(0.18, 0.00, 0.98))
-    
+#    
+#    renderer.set_camera(position=(-176.42, 118.52, 128.20),
+#                        focal_point=(113.30, 128.31, 76.56),
+#                        view_up=(0.18, 0.00, 0.98))
+    renderer.set_camera(position=(-5.58, 84.98, 467.47),
+                        focal_point=(-8.92, -16.15, 4.47),
+                        view_up=(0.05, 0.98, -0.21))
     renderer.add(stream_actor)
+    
 #    show_m = window.ShowManager(renderer, size=(800, 700))
 #    show_m.initialize()
 #    show_m.render()
 #    show_m.start()
+    window.snapshot(renderer, fname='images/'+tract['name']+'.png', size=(600, 600), offscreen=True,
+             order_transparent=False)
 
 #    window.show(renderer, size=(600, 600), reset_camera=False)
-    window.record(renderer, out_path= 'images/'+tract['name']+'.png', size=(600, 600))
+#    window.record(renderer, out_path= 'images/'+tract['name']+'.png', size=(600, 600))
     
    
 
