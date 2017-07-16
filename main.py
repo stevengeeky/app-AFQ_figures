@@ -12,6 +12,8 @@ import os
 import json
 import numpy as np
 from dipy.viz import window, actor
+import matplotlib
+matplotlib.use('Agg')
 
 
 
