@@ -6,14 +6,14 @@ Created on Fri Jul 14 14:53:50 2017
 """
 
 
-
+import matplotlib
+matplotlib.use('Agg')
 import glob
 import os
 import json
 import numpy as np
 from dipy.viz import window, actor
-import matplotlib
-matplotlib.use('Agg')
+
 
 
 
