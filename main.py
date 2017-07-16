@@ -15,20 +15,25 @@ import numpy as np
 from dipy.viz import window, actor
 from xvfbwrapper import Xvfb
 
+# start virtual display
 vdisplay = Xvfb()
 vdisplay.start()
 
-
-
-
+# read json file
 with open('config.json') as config_json:
     config = json.load(config_json)
 
 pwd = os.getcwd()
 os.mkdir(pwd + "/images")
-##os.chdir(pwd + "/surfaces")
-#
-#print('looking for ' + config["AFQ"] + "/tracts/*.json")
+
+camera_pos = [(-5.58, 84.98, 467.47), (-482.32, 3.58, -6.28),
+              (-58.32, 454.83, -14.22), (455.46, 9.14, 95.68)]
+focal_point = [(-8.92, -16.15, 4.47), (-8.92, -16.15, 4.47),
+               (-8.92, -16.15, 4.47), (-8.92, -16.15, 4.47)]
+view_up = [(0.05, 0.98, -0.21), (-0.02, -0.01, 1.00),
+           (-0.01, 0.04, 1.00), (-0.20, 0.21, 0.96)]
+views = ['axial', 'sagittal_left', 'coronal', 'sagittal_right']
+
 print config["AFQ"]
 for file in glob.glob(config["AFQ"] + "/*.json"):
 #for file in glob.glob("tracts/*.json"):
@@ -41,29 +46,31 @@ for file in glob.glob(config["AFQ"] + "/*.json"):
         templine[:,1] = tract['coords'][i][0][1]
         templine[:,2] = tract['coords'][i][0][2]
         bundle.append(templine)
-        
-    renderer = window.Renderer()
-#    renderer.clear()
-#    renderer.projection('parallel')
-    stream_actor = actor.streamtube(bundle, colors=tract['color'],linewidth=1)
-#    
-#    renderer.set_camera(position=(-176.42, 118.52, 128.20),
-#                        focal_point=(113.30, 128.31, 76.56),
-#                        view_up=(0.18, 0.00, 0.98))
-    renderer.set_camera(position=(-5.58, 84.98, 467.47),
-                        focal_point=(-8.92, -16.15, 4.47),
-                        view_up=(0.05, 0.98, -0.21))
-    renderer.add(stream_actor)
     
-#    show_m = window.ShowManager(renderer, size=(800, 700))
-#    show_m.initialize()
-#    show_m.render()
-#    show_m.start()
-    window.snapshot(renderer, fname='images/'+tract['name']+'.png', size=(600, 600), offscreen=True,
-             order_transparent=False)
+    split_name = tract['name'].split(' ')
+    imagename = '_'.join(split_name)
+    
+    for d in range(len(camera_pos)): #directions: axial, sagittal, coronal
+        renderer = window.Renderer()
+        stream_actor = actor.streamtube(bundle, colors=tract['color'],linewidth=1)                        
+        renderer.set_camera(position=camera_pos[d],
+                            focal_point=focal_point[d],
+                            view_up=view_up[d])
 
-#    window.show(renderer, size=(600, 600), reset_camera=False)
-#    window.record(renderer, out_path= 'images/'+tract['name']+'.png', size=(600, 600))
+        renderer.add(stream_actor)
+        
+#        show_m = window.ShowManager(renderer, size=(800, 700))
+#        show_m.initialize()
+#        show_m.render()
+#        show_m.start()
+#        renderer.camera_info() #get location of camera
+        
+        window.snapshot(renderer, fname='images/'+imagename+'_'+views[d]+'.png', 
+                        size=(800, 800), offscreen=True, order_transparent=False)
+    
+    
+        #window.show(renderer, size=(600, 600), reset_camera=False)
+    #    window.record(renderer, out_path= 'images/'+tract['name']+'.png', size=(600, 600))
     
    
 vdisplay.stop()
