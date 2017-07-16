@@ -13,7 +13,10 @@ import os
 import json
 import numpy as np
 from dipy.viz import window, actor
+from xvfbwrapper import Xvfb
 
+vdisplay = Xvfb()
+vdisplay.start()
 
 
 
@@ -63,4 +66,4 @@ for file in glob.glob(config["AFQ"] + "/*.json"):
 #    window.record(renderer, out_path= 'images/'+tract['name']+'.png', size=(600, 600))
     
    
-
+vdisplay.stop()

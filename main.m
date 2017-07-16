@@ -42,6 +42,7 @@ for i = 1:length(fg_classified)
             mbaDisplayBrainSlice(nifti, [0 5 0])
     end
     saveas(gcf, figname)
+	print(gcf, figname, '-dpng')
     close
 end
 
