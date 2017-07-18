@@ -6,3 +6,4 @@ output.mat
 /images
 images/
 *.nii.gz
+t1*

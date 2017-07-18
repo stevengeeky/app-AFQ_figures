@@ -12,6 +12,7 @@ import glob
 import os
 import json
 import numpy as np
+import nibabel as nib
 from dipy.viz import window, actor
 from xvfbwrapper import Xvfb
 
@@ -33,6 +34,14 @@ focal_point = [(-8.92, -16.15, 4.47), (-8.92, -16.15, 4.47),
 view_up = [(0.05, 0.98, -0.21), (-0.02, -0.01, 1.00),
            (-0.01, 0.04, 1.00), (-0.20, 0.21, 0.96)]
 views = ['axial', 'sagittal_left', 'coronal', 'sagittal_right']
+
+slice_view = [48, 74, 85]
+
+img = nib.load('t1.nii')
+data = img.get_data()
+affine = img.affine
+mean, std = data[data > 0].mean(), data[data > 0].std()
+value_range = (mean - 0.2 * std, mean + 2 * std)
 
 print config["AFQ"]
 for file in glob.glob(config["AFQ"] + "/*.json"):
@@ -58,7 +67,15 @@ for file in glob.glob(config["AFQ"] + "/*.json"):
                             view_up=view_up[d])
 
         renderer.add(stream_actor)
-        
+        slice_actor = actor.slicer(data, affine, value_range)
+        if d == 0:
+            slice_actor.display(z=slice_view[0])
+        elif d == 2:
+            slice_actor.display(y=slice_view[2])
+        else: 
+            slice_actor.display(x=slice_view[1])
+        renderer.add(slice_actor)
+#        
 #        show_m = window.ShowManager(renderer, size=(800, 700))
 #        show_m.initialize()
 #        show_m.render()
