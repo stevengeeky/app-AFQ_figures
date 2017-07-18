@@ -37,7 +37,7 @@ views = ['axial', 'sagittal_left', 'coronal', 'sagittal_right']
 
 slice_view = [48, 74, 85]
 
-img = nib.load('t1.nii')
+img = nib.load(config['t1'])
 data = img.get_data()
 affine = img.affine
 mean, std = data[data > 0].mean(), data[data > 0].std()
