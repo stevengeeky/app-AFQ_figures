@@ -36,7 +36,7 @@ view_up = [(0.05, 0.98, -0.21), (-0.02, -0.01, 1.00),
 views = ['axial', 'sagittal_left', 'coronal', 'sagittal_right']
 
 # slice_view = [48, 74, 85]
-slice_view = [config['xslice'], config['yslice'], config['zslice']]
+slice_view = [config['axial'], config['sagittal'], config['coronal']]
 
 img = nib.load(config['t1'])
 data = img.get_data()
