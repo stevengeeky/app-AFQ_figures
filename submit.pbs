@@ -12,10 +12,6 @@ if [ $ENV == "IUHPC" ]; then
 	module unload python
 	module load anaconda/python2.7
 	source activate vtk
-	
-	export PYTHONPATH=/N/u/brlife/Karst/git/dipy:$PYTHONPATH
-	export PYTHONPATH=/N/u/brlife/Karst/git/nibabel:$PYTHONPATH
-	export PYTHONPATH=/N/u/brlife/Karst/git/xvfbwrapper:$PYTHONPATH
 fi
 
 if [ $ENV == "VM" ]; then
