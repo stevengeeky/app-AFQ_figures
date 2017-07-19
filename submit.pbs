@@ -7,16 +7,24 @@
 
 if [ $ENV == "IUHPC" ]; then
 	cd $PBS_O_WORKDIR
+	module load singularity
+	singularity shell /N/soft/rhel7/singularity/images/soichih_xvfb-2017-07-18-3b7c062cf4a6.img 
 	module unload python
-	module load anaconda2
+	module load anaconda/python2.7
+	source activate vtk
 	
+	export PYTHONPATH=/N/u/brlife/Karst/git/dipy:$PYTHONPATH
+	export PYTHONPATH=/N/u/brlife/Karst/git/nibabel:$PYTHONPATH
+	export PYTHONPATH=/N/u/brlife/Karst/git/xvfbwrapper:$PYTHONPATH
 fi
 
-source activate dipyenv
+if [ $ENV == "VM" ]; then
+	source activate dipyenv
 
-export PYTHONPATH=export PYTHONPATH=/usr/local/nibabel:$PYTHONPATH
-export PYTHONPATH=export PYTHONPATH=/usr/local/dipy:$PYTHONPATH
-export PYTHONPATH=export PYTHONPATH=/usr/local/xvfbwrapper:$PYTHONPATH
+	export PYTHONPATH=/usr/local/nibabel:$PYTHONPATH
+	export PYTHONPATH=/usr/local/dipy:$PYTHONPATH
+	export PYTHONPATH=/usr/local/xvfbwrapper:$PYTHONPATH
+fi
 
 
 echo "starting main"
