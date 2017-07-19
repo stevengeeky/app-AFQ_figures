@@ -230,7 +230,7 @@
 			"desc": "This figure shows Right Arcuate coronal view"
 		},
 		{
-			"filename": "images/Right_Arcuate_sagittal_Right.png",
+			"filename": "images/Right_Arcuate_sagittal_left.png",
 			"name": "Right Arcuate Right sagittal view",
 			"desc": "This figure shows Right Arcuate Right sagittal view"
 		},
@@ -250,7 +250,7 @@
 			"desc": "This figure shows Right Cingulum Cingulate coronal view"
 		},
 		{
-			"filename": "images/Right_Cingulum_Cingulate_sagittal_Right.png",
+			"filename": "images/Right_Cingulum_Cingulate_sagittal_left.png",
 			"name": "Right Cingulum Cingulate Right sagittal view",
 			"desc": "This figure shows Right Cingulum Cingulate Right sagittal view"
 		},
@@ -270,7 +270,7 @@
 			"desc": "This figure shows Right Cingulum Hippocampus coronal view"
 		},
 		{
-			"filename": "images/Right_Cingulum_Hippocampus_sagittal_Right.png",
+			"filename": "images/Right_Cingulum_Hippocampus_sagittal_left.png",
 			"name": "Right Cingulum Hippocampus Right sagittal view",
 			"desc": "This figure shows Right Cingulum Hippocampus Right sagittal view"
 		},
@@ -290,7 +290,7 @@
 			"desc": "This figure shows Right Corticospinal coronal view"
 		},
 		{
-			"filename": "images/Right_Corticospinal_sagittal_Right.png",
+			"filename": "images/Right_Corticospinal_sagittal_left.png",
 			"name": "Right Corticospinal Right sagittal view",
 			"desc": "This figure shows Right Corticospinal Right sagittal view"
 		},
@@ -310,7 +310,7 @@
 			"desc": "This figure shows Right IFOF coronal view"
 		},
 		{
-			"filename": "images/Right_IFOF_sagittal_Right.png",
+			"filename": "images/Right_IFOF_sagittal_left.png",
 			"name": "Right IFOF Right sagittal view",
 			"desc": "This figure shows Right IFOF Right sagittal view"
 		},
@@ -330,7 +330,7 @@
 			"desc": "This figure shows Right ILF coronal view"
 		},
 		{
-			"filename": "images/Right_ILF_sagittal_Right.png",
+			"filename": "images/Right_ILF_sagittal_left.png",
 			"name": "Right ILF Right sagittal view",
 			"desc": "This figure shows Right ILF Right sagittal view"
 		},
@@ -350,7 +350,7 @@
 			"desc": "This figure shows Right SLF coronal view"
 		},
 		{
-			"filename": "images/Right_SLF_sagittal_Right.png",
+			"filename": "images/Right_SLF_sagittal_left.png",
 			"name": "Right SLF Right sagittal view",
 			"desc": "This figure shows Right SLF Right sagittal view"
 		},
@@ -370,7 +370,7 @@
 			"desc": "This figure shows Right Thalamic Radiation coronal view"
 		},
 		{
-			"filename": "images/Right_Thalamic_Radiation_sagittal_Right.png",
+			"filename": "images/Right_Thalamic_Radiation_sagittal_left.png",
 			"name": "Right Thalamic Radiation Right sagittal view",
 			"desc": "This figure shows Right Thalamic Radiation Right sagittal view"
 		},
@@ -390,7 +390,7 @@
 			"desc": "This figure shows Right Uncinate coronal view"
 		},
 		{
-			"filename": "images/Right_Uncinate_sagittal_Right.png",
+			"filename": "images/Right_Uncinate_sagittal_left.png",
 			"name": "Right Uncinate Right sagittal view",
 			"desc": "This figure shows Right Uncinate Right sagittal view"
 		},
