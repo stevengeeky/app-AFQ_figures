@@ -226,13 +226,13 @@
 		},
 		{
 			"filename": "images/Right_Arcuate_coronal.png",
-			"name": "Right Arcuatecoronal view",
+			"name": "Right Arcuate coronal view",
 			"desc": "This figure shows Right Arcuate coronal view"
 		},
 		{
 			"filename": "images/Right_Arcuate_sagittal_left.png",
-			"name": "Right Arcuate Right sagittal view",
-			"desc": "This figure shows Right Arcuate Right sagittal view"
+			"name": "Right Arcuate left sagittal view",
+			"desc": "This figure shows Right Arcuate left sagittal view"
 		},
 		{
 			"filename": "images/Right_Arcuate_sagittal_right.png",
@@ -252,7 +252,7 @@
 		{
 			"filename": "images/Right_Cingulum_Cingulate_sagittal_left.png",
 			"name": "Right Cingulum Cingulate Right sagittal view",
-			"desc": "This figure shows Right Cingulum Cingulate Right sagittal view"
+			"desc": "This figure shows Right Cingulum Cingulate left sagittal view"
 		},
 		{
 			"filename": "images/Right_Cingulum_Cingulate_sagittal_right.png",
@@ -272,7 +272,7 @@
 		{
 			"filename": "images/Right_Cingulum_Hippocampus_sagittal_left.png",
 			"name": "Right Cingulum Hippocampus Right sagittal view",
-			"desc": "This figure shows Right Cingulum Hippocampus Right sagittal view"
+			"desc": "This figure shows Right Cingulum Hippocampus left sagittal view"
 		},
 		{
 			"filename": "images/Right_Cingulum_Hippocampus_sagittal_right.png",
@@ -292,7 +292,7 @@
 		{
 			"filename": "images/Right_Corticospinal_sagittal_left.png",
 			"name": "Right Corticospinal Right sagittal view",
-			"desc": "This figure shows Right Corticospinal Right sagittal view"
+			"desc": "This figure shows Right Corticospinal left sagittal view"
 		},
 		{
 			"filename": "images/Right_Corticospinal_sagittal_right.png",
@@ -312,7 +312,7 @@
 		{
 			"filename": "images/Right_IFOF_sagittal_left.png",
 			"name": "Right IFOF Right sagittal view",
-			"desc": "This figure shows Right IFOF Right sagittal view"
+			"desc": "This figure shows Right IFOF left sagittal view"
 		},
 		{
 			"filename": "images/Right_IFOF_sagittal_right.png",
@@ -332,7 +332,7 @@
 		{
 			"filename": "images/Right_ILF_sagittal_left.png",
 			"name": "Right ILF Right sagittal view",
-			"desc": "This figure shows Right ILF Right sagittal view"
+			"desc": "This figure shows Right ILF left sagittal view"
 		},
 		{
 			"filename": "images/Right_ILF_sagittal_right.png",
@@ -352,7 +352,7 @@
 		{
 			"filename": "images/Right_SLF_sagittal_left.png",
 			"name": "Right SLF Right sagittal view",
-			"desc": "This figure shows Right SLF Right sagittal view"
+			"desc": "This figure shows Right SLF left sagittal view"
 		},
 		{
 			"filename": "images/Right_SLF_sagittal_right.png",
@@ -372,7 +372,7 @@
 		{
 			"filename": "images/Right_Thalamic_Radiation_sagittal_left.png",
 			"name": "Right Thalamic Radiation Right sagittal view",
-			"desc": "This figure shows Right Thalamic Radiation Right sagittal view"
+			"desc": "This figure shows Right Thalamic Radiation left sagittal view"
 		},
 		{
 			"filename": "images/Right_Thalamic_Radiation_sagittal_right.png",
@@ -392,7 +392,7 @@
 		{
 			"filename": "images/Right_Uncinate_sagittal_left.png",
 			"name": "Right Uncinate Right sagittal view",
-			"desc": "This figure shows Right Uncinate Right sagittal view"
+			"desc": "This figure shows Right Uncinate left sagittal view"
 		},
 		{
 			"filename": "images/Right_Uncinate_sagittal_right.png",
