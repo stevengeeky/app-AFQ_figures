@@ -398,6 +398,22 @@
 			"filename": "images/Right_Uncinate_sagittal_right.png",
 			"name": "Right Uncinate right sagittal view",
 			"desc": "This figure shows Right Uncinate right sagittal view"
+		},
+			"filename": "images/alltracts_axial.png",
+			"name": “All tracts axial view",
+			"desc": "This figure shows all tracts axial view"
+		},
+			"filename": "images/alltracts_coronal.png",
+			"name": “All tracts coronal view“,
+			"desc": "This figure shows all tracts coronal view"
+		},
+			"filename": "images/alltracts_sagittal_left.png",
+			"name": “All tracts left sagittal view",
+			"desc": "This figure shows all tracts left sagittal view"
+		},
+			"filename": "images/alltracts_sagittal_right.png",
+			"name": “All tracts right sagittal view",
+			"desc": "This figure shows all tracts right sagittal view"
 		}
 
 	]

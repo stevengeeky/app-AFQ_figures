@@ -31,7 +31,7 @@ cp $SERVICE_DIR/images.json .
 
 #check for output files
 count=$(ls images/*.png | wc -l)
-if [ $count -eq 80 ];
+if [ $count -eq 84 ];
 then 
   echo 0 > finished
 else
